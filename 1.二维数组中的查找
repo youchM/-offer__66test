@@ -1,1 +1,15 @@
-
+def find(num,array):
+    row = len(array)-1
+    col = len(array[0])-1
+    col_ = 0
+    while col_<=col and row >= 0:
+        if array[row][col_] == num:
+            return True
+        if array[row][col_] > num:
+            row -= 1
+        if array[row][col_] < num:
+            col_ += 1
+    return False
+a = [[1,2],[3,4]]
+result = find(5,a)
+print(result)
