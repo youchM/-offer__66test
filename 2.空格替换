@@ -1,0 +1,4 @@
+def string(str):
+    return str.replace(" ","%20")
+sentence = input("请输入一句带空格的句子")
+print(string(sentence))
