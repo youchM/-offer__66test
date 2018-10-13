@@ -1,0 +1,13 @@
+def Feibo(c):
+    a = 0
+    b = 1
+    count = 0
+    while count < c:
+        a, b = b, a + b
+        count += 1
+    return a
+
+
+c = int(input("请输入执行次数："))
+x = Feibo(c)
+print(x)
